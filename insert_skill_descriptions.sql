@@ -1,0 +1,11 @@
+-- SQL script to insert all skill descriptions into the database
+
+INSERT INTO skill_descriptions (skill_id, name, max_level, type, description, level_details) VALUES
+('NV_BASIC', 'Basic Skill', 9, NULL, 'ใช้ความสามารถขั้นพื้นฐาน', '[Level 1] : แลกเปลี่ยน\n[Level 2] : แสดงความรู้สึก\n[Level 3] : ทำให้นั่งได้\n[Level 4] : ทำให้เปิดห้องพูดคุยได้\n[Level 5] : เข้าร่วมกลุ่ม\n[Level 6] : ฝากของ\n[Level 7] : สร้างกลุ่ม\n[Level 9] : เปลี่ยนอาชีพ'),
+('SM_SWORD', 'Sword Mastery', 10, 'Passive', 'เพิ่มพลังโจมตีเมื่อใช้ดาบมือเดียว โดยพลังโจมตีที่เพิ่มมานี้จะเป็น Ignore Target Defence', '[Lv 1] : ATK +4\n[Lv 2] : ATK +8\n[Lv 3] : ATK +12\n[Lv 4] : ATK +16\n[Lv 5] : ATK +20\n[Lv 6] : ATK +24\n[Lv 7] : ATK +28\n[Lv 8] : ATK +32\n[Lv 9] : ATK +36\n[Lv10] : ATK +40'),
+('SM_TWOHAND', 'Two-Handed Sword Mastery', 10, 'Passive', 'เพิ่มพลังโจมตีเมื่อใช้ดาบ 2 มือ โดยพลังโจมตีที่เพิ่มมานี้จะเป็น Ignore Target Defence', '[Lv 1] : ATK +4\n[Lv 2] : ATK +8\n[Lv 3] : ATK +12\n[Lv 4] : ATK +16\n[Lv 5] : ATK +20\n[Lv 6] : ATK +24\n[Lv 7] : ATK +28\n[Lv 8] : ATK +32\n[Lv 9] : ATK +36\n[Lv10] : ATK +40'),
+('SM_RECOVERY', 'Increase HP Recovery', 10, 'Passive', 'ความสามารถช่วยฟื้น HP ทุก 10 วินาที ขณะที่นั่งหรือยืนอยู่กับที่เท่านั้น ค่า VIT จะมีผลทำให้ HP ที่ได้จาก Skill นี้มากขึ้นกว่าปกติ และทำให้ Item สำหรับเพิ่ม HP ทุกชนิดให้ผลดีขึ้นอีก 10% ต่อ 1 Level', '[Lv 1] : HP +5\n[Lv 2] : HP +10\n[Lv 3] : HP +15\n[Lv 4] : HP +20\n[Lv 5] : HP +25\n[Lv 6] : HP +30\n[Lv 7] : HP +35\n[Lv 8] : HP +40\n[Lv 9] : HP +45\n[Lv10] : HP +50'),
+('SM_BASH', 'Bash', 10, 'Active,Offensive', 'ใช้สำหรับโจมตีศัตรูตัวเดียว ถ้ามี Skill Fatal Blow ,Bash ตั้งแต่ LV 5  ขึ้นไปมีโอกาสทำให้ศัตรูติด Stun ได้', '[Lv 1] : ATK +130%\n[Lv 2] : ATK +160%\n[Lv 3] : ATK +190%\n[Lv 4] : ATK +220%\n[Lv 5] : ATK +250%\n[Lv 6] : ATK +280%\n[Lv 7] : ATK +310%\n[Lv 8] : ATK +340%\n[Lv 9] : ATK +370%\n[Lv10] : ATK +400'),
+('SM_PROVOKE', 'Provoke', 10, 'Active,Supportive', 'ทำให้พลังป้องกันของศัตรูลดลงแต่พลังโจมตีจะสูงขึ้น ใช้กับ Undead ไม่ได้', '[Lv 1] : +5% Atk, -10% DEF\n[Lv 2] : +8% Atk, -15% DEF\n[Lv 3] : +11% Atk, -20% DEF\n[Lv 4] : +14% Atk, -25% DEF\n[Lv 5] : +17% Atk, -30% DEF\n[Lv 6] : +20% Atk, -35% DEF\n[Lv 7] : +23% Atk, -40% DEF\n[Lv 8] : +26% Atk, -45% DEF\n[Lv 9] : +29% Atk, -50% DEF\n[Lv10] : +32% Atk, -55% DEF');
+
+-- Add more skills as needed
